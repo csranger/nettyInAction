@@ -17,20 +17,17 @@ public class ServerHandler extends SimpleChannelInboundHandler {
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         System.out.println("channelActive");
-        super.channelActive(ctx);
     }
 
     // 客户端断开连接事件会触发这个方法
     @Override
     public void channelInactive(ChannelHandlerContext ctx) throws Exception {
         System.out.println("channelInactive");
-        super.channelInactive(ctx);
     }
 
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
         System.out.println("exceptionCaught");
-        super.exceptionCaught(ctx, cause);
     }
 }

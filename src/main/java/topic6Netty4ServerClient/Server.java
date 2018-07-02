@@ -1,10 +1,7 @@
 package topic6Netty4ServerClient;
 
 import io.netty.bootstrap.ServerBootstrap;
-import io.netty.channel.Channel;
-import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelInitializer;
-import io.netty.channel.EventLoopGroup;
+import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.codec.string.StringDecoder;
@@ -40,6 +37,16 @@ public class Server {
                     ch.pipeline().addLast(new ServerHandler());
                 }
             });
+
+            // netty3设置如下
+//            bootstrap.setOption("backlog", 2048);
+//            bootstrap.setOption("keepAlive", true);
+//            bootstrap.setOption("tcpNoDelay", true);
+            // 设置参数 TCP参数，还有很多其它参数
+            bootstrap.option(ChannelOption.SO_BACKLOG, 2048);  // 连接缓冲池的大小，ServerSocketChannel的设置，accept连接会放入一个2048大小的"队列"
+            bootstrap.childOption(ChannelOption.SO_KEEPALIVE, true);// SocketChannel的设置，维持连接的活跃，清除一些死连接
+            bootstrap.option(ChannelOption.TCP_NODELAY, true);  // SocketChannel的设置，关闭延迟发送
+
 
             // 绑定端口
             ChannelFuture future = bootstrap.bind(10101);
