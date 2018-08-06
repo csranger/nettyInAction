@@ -10,7 +10,7 @@
 
     <dependencies>
 
-        <!-- import org.jboss.netty -->
+        <!-- 引入 netty 3： import org.jboss.netty -->
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty</artifactId>
@@ -18,7 +18,7 @@
         </dependency>
 
 
-        <!-- topic 6 import io.netty-->
+        <!-- 引入 netty 4： import io.netty-->
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>

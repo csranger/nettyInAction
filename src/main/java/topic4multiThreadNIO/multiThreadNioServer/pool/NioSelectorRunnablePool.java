@@ -1,10 +1,10 @@
-package topic4NIONetty.multiThreadNioNetty.pool;
+package topic4multiThreadNIO.multiThreadNioServer.pool;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import topic4NIONetty.multiThreadNioNetty.NioServerBoss;
-import topic4NIONetty.multiThreadNioNetty.NioServerWorker;
+import topic4multiThreadNIO.multiThreadNioServer.NioServerBoss;
+import topic4multiThreadNIO.multiThreadNioServer.NioServerWorker;
 
 /**
  * selector线程管理者

@@ -2,7 +2,7 @@ package topic3NettyClient;
 
 import org.jboss.netty.channel.*;
 
-public class HiHandler extends SimpleChannelHandler {
+public class ClientHandler extends SimpleChannelHandler {
 
 
     @Override

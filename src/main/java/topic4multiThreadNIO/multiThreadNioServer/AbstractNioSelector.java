@@ -1,4 +1,4 @@
-package topic4NIONetty.multiThreadNioNetty;
+package topic4multiThreadNIO.multiThreadNioServer;
 
 import java.io.IOException;
 import java.nio.channels.Selector;
@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import topic4NIONetty.multiThreadNioNetty.pool.NioSelectorRunnablePool;
+import topic4multiThreadNIO.multiThreadNioServer.pool.NioSelectorRunnablePool;
 
 /**
  * 抽象selector线程类

@@ -1,4 +1,4 @@
-package topic4NIONetty.multiThreadNioNetty;
+package topic4multiThreadNIO.multiThreadNioServer;
 
 import java.io.IOException;
 import java.nio.channels.ClosedChannelException;
@@ -10,9 +10,9 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.Executor;
 
-import topic4NIONetty.multiThreadNioNetty.pool.Boss;
-import topic4NIONetty.multiThreadNioNetty.pool.NioSelectorRunnablePool;
-import topic4NIONetty.multiThreadNioNetty.pool.Worker;
+import topic4multiThreadNIO.multiThreadNioServer.pool.Boss;
+import topic4multiThreadNIO.multiThreadNioServer.pool.NioSelectorRunnablePool;
+import topic4multiThreadNIO.multiThreadNioServer.pool.Worker;
 
 /**
  * boss实现类 NioServerBoss线程 = boss线程 = 处理 ServerSocketChannel 的 selector 线程

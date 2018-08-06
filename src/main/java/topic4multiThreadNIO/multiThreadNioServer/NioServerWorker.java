@@ -1,4 +1,4 @@
-package topic4NIONetty.multiThreadNioNetty;
+package topic4multiThreadNIO.multiThreadNioServer;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -11,8 +11,8 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.Executor;
 
-import topic4NIONetty.multiThreadNioNetty.pool.NioSelectorRunnablePool;
-import topic4NIONetty.multiThreadNioNetty.pool.Worker;
+import topic4multiThreadNIO.multiThreadNioServer.pool.NioSelectorRunnablePool;
+import topic4multiThreadNIO.multiThreadNioServer.pool.Worker;
 
 /**
  * worker实现类

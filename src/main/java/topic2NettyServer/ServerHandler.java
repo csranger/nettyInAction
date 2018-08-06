@@ -4,7 +4,7 @@ import org.jboss.netty.buffer.ChannelBuffer;
 import org.jboss.netty.buffer.ChannelBuffers;
 import org.jboss.netty.channel.*;
 
-public class HelloHandler extends SimpleChannelHandler {
+public class ServerHandler extends SimpleChannelHandler {
 
 
     @Override

@@ -1,10 +1,10 @@
-package topic4NIONetty.multiThreadNioNetty;
+package topic4multiThreadNIO.multiThreadNioServer;
 
 import java.net.SocketAddress;
 import java.nio.channels.ServerSocketChannel;
 
-import topic4NIONetty.multiThreadNioNetty.pool.Boss;
-import topic4NIONetty.multiThreadNioNetty.pool.NioSelectorRunnablePool;
+import topic4multiThreadNIO.multiThreadNioServer.pool.Boss;
+import topic4multiThreadNIO.multiThreadNioServer.pool.NioSelectorRunnablePool;
 
 /**
  * 创建一个 ServerSocketChannel，监听指定端口，注册到 boss线程(处理 ServerSocketChannel 的 selector 线程 = NioServerBoss线程)

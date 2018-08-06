@@ -32,7 +32,7 @@ public class Client {
                 ChannelPipeline pipeline = Channels.pipeline();
                 pipeline.addLast("decoder", new StringDecoder());
                 pipeline.addLast("encoder", new StringEncoder());
-                pipeline.addLast("hiHandler", new HiHandler());
+                pipeline.addLast("clientHandler", new ClientHandler());
 
                 return pipeline;
             }
@@ -40,7 +40,7 @@ public class Client {
 
         // 连接服务器
         ChannelFuture connect = bootstrap.connect(new InetSocketAddress("127.0.0.1", 10101));
-        System.out.println("client start");
+        System.out.println("客户端启动！");
 
         // 客户端发送消息
         // 这里的 connect.getChannel() 和 messageReceived 方法 里的 ctx.getChannel() 是同一个 Channel

@@ -35,8 +35,8 @@ public class Server {
 
                 pipeline.addLast("decoder", new StringDecoder());   // StringEncoder 实现ChannelUpStreamHandler接口
                 pipeline.addLast("encoder", new StringEncoder());   // StringEncoder 实现ChannelDownStreamHandler接口
-                // 注意此处  HelloHandler  必须在 decoder 和 encoder 后面
-                pipeline.addLast("helloHandler", new HelloHandler());   // 处理消息接受和写 实现SimpleChannelhandler接口
+                // 注意此处  ServerHandler  必须在 decoder 和 encoder 后面
+                pipeline.addLast("serverHandler", new ServerHandler());   // 处理消息接受和写 实现SimpleChannelhandler接口
 
                 return pipeline;
             }
